@@ -109,6 +109,10 @@ https://forum.manjaro.org/t/cant-adjust-screen-brightness-lenovo-laptop-nvidia-x
 Stickey
 https://forum.endeavouros.com/t/systemd-backlight-service-failed/11783/6
 
+Beep Off
+echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
 
+Keyring
+https://discovery.endeavouros.com/signature-and-keyring/pacman-keyring-issues/2021/03/
 
 
