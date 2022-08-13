@@ -93,3 +93,22 @@ wrap WS off
 
 Lastly
 sudo pacman -S thunderbird libreoffice gimp kdenlive obs-studio discord
+
+Somefix
+Nivida driver EOS
+https://discovery.endeavouros.com/nvidia/nvidia-installer/2021/03/
+
+Nivida driver Manjaro
+sudo mhwd -a pci nonfree 0300
+https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-manjaro-linux
+
+Fix backlight in EOS/Manjaro
+https://forum.endeavouros.com/t/systemd-backlight-service-failed/11783/6
+https://forum.manjaro.org/t/cant-adjust-screen-brightness-lenovo-laptop-nvidia-xfce/28771/14
+
+Stickey
+https://forum.endeavouros.com/t/systemd-backlight-service-failed/11783/6
+
+
+
+
