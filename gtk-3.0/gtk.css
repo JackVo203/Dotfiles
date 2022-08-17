@@ -1,0 +1,17 @@
+.xfce4-panel.panel {
+    background-color: #1f1f1f;
+    border-width: 0px;
+}
+
+.xfce4-panel.panel button.flat {
+  color: #a6e3a1;
+  border-radius: 0;
+  border: none;}
+  .xfce4-panel.panel button.flat:hover {
+    border: none;}
+  .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
+    color: #74c7ec;
+    border: none;}
+    .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
+      color: inherit; }
+   

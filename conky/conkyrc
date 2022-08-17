@@ -1,0 +1,70 @@
+conky.config = {
+  background = true,
+  update_interval = 1,
+  short_units = true,
+
+  -- Window
+  own_window = true,
+  own_window_class = 'conky',
+  own_window_type = 'panel',
+  --own_window_colour = '#2E3440',
+  own_window_colour = '1f1f1f',
+  
+  own_window_argb_visual = false, 
+  own_window_argb_value = 0,
+  own_window_transparent = false,
+
+  own_window_hints = 'undecorated, below, sticky, skip_taskbar, skip_pager',
+  minimum_width = 1920,
+   
+  gap_y = 8,
+  gap_x = 0,
+
+  border_inner_margin=8,
+  -- border_outer_margin=1,
+
+  -- Text
+  double_buffer = true,
+  use_xft = true,
+  xftalpha = 1,
+  alignment = 'top_middle',
+
+  draw_outline = false,
+  draw_borders = false,
+  -- border_width = 0,
+  draw_shades = false,
+  uppercase = false,
+
+  -- Fonts and Colours
+  font = 'Hack Nerd Font Mono:bold:size=10',
+  -- Nord
+  default_color = 'eceff4',   
+  -- color0 = '888a85',          
+  -- color1 = '81a1c1',
+  -- color2 = '88C0D0'
+  --Rainbow
+  color0= 'ffb480',
+  color1= 'f8f38d', 	
+  color2 ='42d6a4',          
+  color3 ='08cad1', 	          
+  color4 ='59adf6',          
+  color5 ='9d94ff',          
+  color6 ='c780e8',
+  color7='ff6961'          
+}
+
+conky.text = [[
+${offset 14}\
+${color4}LA $color${tztime America/Los_Angeles %Hh %Mm} ${color6}${tztime America/Los_Angeless %b %d}  \
+${color5}SK $color${tztime Asia/Seoul %Hh %Mm} ${color4}${tztime Asia/Seoul  %b %d}  \
+${color7}HCM $color${tztime Asia/Saigon %Hh %Mm} ${color3}${tztime Asia/Saigon %b %d}  \
+${color1}UPTIME $color${uptime_short}  \
+${color2}CPU ${color5}${cpugraph cpu0 10, 40} $color${cpu}% ${color7}${acpitemp}°C  \
+${color3}RAM ${color4}${membar 10, 40} $color$mem / $memmax  \
+${color2}GPU $color${nvidia temp}°C  \
+${color1}PROC ${color}${processes}${color}  \
+${color4}DISK ${color7}${fs_bar 10, 40} $color${fs_used} / ${fs_size}  \
+${color5}SWAP ${color1}${swapbar 10, 40} $color${swap} / ${swapmax}  \
+${color6}DOWNLOAD ${color3}${downspeedgraph wlp4s0 10, 65} $color${downspeed wlp4s0}  \
+${color4}UPLOAD ${color0}${upspeedgraph wlp4s0 10, 65} $color${upspeed wlp4s0}  
+]]
